@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">FinanceFlow</string>
+    
+    <!-- Navigation -->
+    <string name="nav_home">Home</string>
+    <string name="nav_activity">Activity</string>
+    <string name="nav_add">Add</string>
+    <string name="nav_summary">Summary</string>
+    <string name="nav_maps">Maps</string>
+    
+    <!-- Common -->
+    <string name="currency_idr">IDR</string>
+    <string name="currency_usd">USD</string>
+    <string name="currency_eur">EUR</string>
+    <string name="currency_sar">SAR</string>
+    <string name="currency_myr">MYR</string>
+    <string name="currency_jpy">JPY</string>
+    
+    <!-- Error Messages -->
+    <string name="error_empty_amount">Please enter an amount</string>
+    <string name="error_empty_category">Please select a category</string>
+    <string name="error_invalid_amount">Please enter a valid amount</string>
+    
+    <!-- Success Messages -->
+    <string name="success_transaction_added">Transaction added successfully</string>
+    <string name="success_transaction_updated">Transaction updated successfully</string>
+    <string name="success_transaction_deleted">Transaction deleted successfully</string>
+    
+    <!-- Screen Titles -->
+    <string name="title_home">Dashboard</string>
+    <string name="title_activity">Transaction History</string>
+    <string name="title_add_finance">Add Transaction</string>
+    <string name="title_summary">Financial Summary</string>
+    <string name="title_maps">Financial Services</string>
+    
+    <!-- Button Labels -->
+    <string name="btn_add_income">Add Income</string>
+    <string name="btn_add_expense">Add Expense</string>
+    <string name="btn_save">Save</string>
+    <string name="btn_cancel">Cancel</string>
+    <string name="btn_clear">Clear</string>
+    <string name="btn_delete">Delete</string>
+    <string name="btn_edit">Edit</string>
+    
+    <!-- Labels -->
+    <string name="label_amount">Amount</string>
+    <string name="label_category">Category</string>
+    <string name="label_description">Description</string>
+    <string name="label_date">Date</string>
+    <string name="label_type">Type</string>
+    
+    <!-- Dashboard -->
+    <string name="dashboard_balance">Current Balance</string>
+    <string name="dashboard_income">Monthly Income</string>
+    <string name="dashboard_expenses">Monthly Expenses</string>
+    <string name="dashboard_recent_transactions">Recent Transactions</string>
+    <string name="dashboard_financial_health">Financial Health</string>
+    <string name="dashboard_quick_actions">Quick Actions</string>
+    
+    <!-- Activity -->
+    <string name="activity_total_income">Total Income</string>
+    <string name="activity_total_expenses">Total Expenses</string>
+    <string name="activity_net_balance">Net Balance</string>
+    <string name="activity_no_transactions">No transactions found</string>
+    
+    <!-- Summary -->
+    <string name="summary_period_month">This Month</string>
+    <string name="summary_period_quarter">Quarter</string>
+    <string name="summary_period_year">Year</string>
+    <string name="summary_period_all">All Time</string>
+    <string name="summary_net_savings">Net Savings</string>
+    <string name="summary_avg_daily">Avg Daily</string>
+    <string name="summary_currency_converter">Currency Converter</string>
+    <string name="summary_converted_amount">Converted Amount</string>
+    <string name="summary_exchange_rates">Exchange Rates</string>
+    <string name="summary_rates_disclaimer">Exchange rates are for reference only. Actual rates may vary.</string>
+    
+    <!-- Maps -->
+    <string name="maps_search_hint">Search for financial services...</string>
+    <string name="maps_all_services">All Services</string>
+    <string name="maps_banks">Banks</string>
+    <string name="maps_atms">ATMs</string>
+    <string name="maps_investment">Investment</string>
+    <string name="maps_advisors">Advisors</string>
+    <string name="maps_locations_found">%d locations found</string>
+    <string name="maps_get_directions">Get Directions</string>
+    <string name="maps_save_location">Save Location</string>
+    <string name="maps_address">Address</string>
+    <string name="maps_distance">Distance</string>
+    <string name="maps_hours">Hours</string>
+    <string name="maps_phone">Phone</string>
+    <string name="maps_services">Services</string>
+    
+    <!-- Transaction Categories -->
+    <string name="category_salary">Salary</string>
+    <string name="category_freelance">Freelance</string>
+    <string name="category_investment">Investment</string>
+    <string name="category_business">Business</string>
+    <string name="category_food">Food &amp; Dining</string>
+    <string name="category_transport">Transportation</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_education">Education</string>
+    <string name="category_healthcare">Healthcare</string>
+    <string name="category_utilities">Utilities</string>
+    <string name="category_other">Other</string>
+</resources>
