@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # FP Pemrograman Mobile Kelompok-1
 
 | Nama                        | NRP        |
@@ -40,3 +41,6 @@
 ├── build.gradle.kts # Project build config
 ├── settings.gradle.kts # Project settings
 └── README.md # Documentation
+=======
+# fp-pemmob-kelompok1
+>>>>>>> a5c60c152ac2ced0415cab2414aee05c949c99be
