@@ -2,6 +2,7 @@
 
 | Nama                        | NRP        |
 | --------------------------- | ---------- |
+| Aras Rizky Ananta           | 5027221053 |
 | Christiano Ronaldo Silalahi | 5027241025 |
 | Jonathan Zelig Sutopo       | 5027241047 |
 | Theodorus Aaron Ugraha      | 5027241056 |
