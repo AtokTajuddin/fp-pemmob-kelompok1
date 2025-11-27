@@ -13,30 +13,33 @@
 
 # Project Structure
 
+```text
+Project Structure
 ├── app/
-│ ├── src/main/java/com/financeflow/app/
-│ │ ├── MainActivity.kt # Entry point
-│ │ ├── presentation/
-│ │ │ ├── screens/ # All UI screens
-│ │ │ │ ├── HomeScreen.kt # Dashboard
-│ │ │ │ ├── ActivityScreen.kt # Transaction history
-│ │ │ │ ├── AddFinanceScreen.kt # Add transactions
-│ │ │ │ ├── SummaryScreen.kt # Analytics & currency converter
-│ │ │ │ └── MapsScreen.kt # Financial services locator
-│ │ │ ├── components/ # Reusable UI components
-││ │ │ │ └── BottomNavigation.kt # Navigation bar
-│ │ │ ├── navigation/ # Navigation setup
-│ │ │ └── viewmodel/ # ViewModels
-│ │ ├── data/ # Data layer
-│ │ │ ├── model/ # Data models
-│ │ │ ├── local/ # Database (Room)
-│ │ │ └── repository/ # Repository pattern
-│ │ ├── di/ # Dependency injection
-│ │ ├── ui/ # Theme and design
-│ │ └── utils/ # Utility functions
-│ │ └── FinanceFlowApplication.kt # Application class
-│ ├── src/main/res/ # Android resources
-│ └── build.gradle.kts # Module build config
-├── build.gradle.kts # Project build config
-├── settings.gradle.kts # Project settings
-└── README.md # Documentation
+│   ├── src/main/java/com/financeflow/app/
+│   │   ├── MainActivity.kt               # Entry point
+│   │   ├── presentation/
+│   │   │   ├── screens/                  # All UI screens
+│   │   │   │   ├── HomeScreen.kt         # Dashboard
+│   │   │   │   ├── ActivityScreen.kt     # Transaction history
+│   │   │   │   ├── AddFinanceScreen.kt   # Add transactions
+│   │   │   │   ├── SummaryScreen.kt      # Analytics & currency converter
+│   │   │   │   └── MapsScreen.kt         # Financial services locator
+│   │   │   ├── components/               # Reusable UI components
+│   │   │   │   └── BottomNavigation.kt   # Navigation bar
+│   │   │   ├── navigation/               # Navigation setup
+│   │   │   └── viewmodel/                # ViewModels
+│   │   ├── data/                         # Data layer
+│   │   │   ├── model/                    # Data models
+│   │   │   ├── local/                    # Database (Room)
+│   │   │   └── repository/               # Repository pattern
+│   │   ├── di/                           # Dependency injection
+│   │   ├── ui/                           # Theme and design system
+│   │   ├── utils/                        # Utility helpers
+│   │   └── FinanceFlowApplication.kt     # Application class
+│   ├── src/main/res/                     # Android resources
+│   └── build.gradle.kts                  # Module build config
+├── build.gradle.kts                      # Project build config
+├── settings.gradle.kts                   # Project settings
+└── README.md                             # Documentation
+```
