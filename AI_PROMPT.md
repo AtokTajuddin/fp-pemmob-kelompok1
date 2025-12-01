@@ -97,13 +97,14 @@ These are the specific packages we use. **Do not use alternatives** (e.g., don't
 
 ### **2. Features**
 
-|Feature|Package|Why this one?|
-|---|---|---|
-|**AI Chatbot**|`google_generative_ai`|The official SDK for Google Gemini. Free tier is generous and easy to implement.|
-|**Maps**|`flutter_map`|Uses **OpenStreetMap** (Free). **IMPORTANT:** We are NOT using Google Maps to avoid credit card billing risks.|
-|**Geolocation**|`geolocator`|Gets the phone's GPS coordinates (Latitude/Longitude) to tag transactions.|
-|**Charts**|`fl_chart`|Creates the Pie Charts and Bar Graphs for the "Analysis" screen.|
-|**Camera**|`image_picker`|Opens the native camera or gallery to pick receipt images.|
+| Feature         | Package                | Why this one?                                                                                                  |
+| --------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **AI Chatbot**  | `google_generative_ai` | The official SDK for Google Gemini. Free tier is generous and easy to implement.                               |
+| **Maps**        | `flutter_map`          | Uses **OpenStreetMap** (Free). **IMPORTANT:** We are NOT using Google Maps to avoid credit card billing risks. |
+| **Geolocation** | `geolocator`           | Gets the phone's GPS coordinates (Latitude/Longitude) to tag transactions.                                     |
+| **Charts**      | `fl_chart`             | Creates the Pie Charts and Bar Graphs for the "Analysis" screen.                                               |
+| **Camera**      | `image_picker`         | Opens the native camera or gallery to pick receipt images.                                                     |
+| Geocoding       | geocoding              | Converts Latitude/Longitude (Numbers) into an Address (Text).                                                  |
 
 ### **3. Utilities**
 

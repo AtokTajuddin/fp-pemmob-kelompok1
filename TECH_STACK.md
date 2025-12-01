@@ -81,22 +81,23 @@ These are the specific packages we use. **Do not use alternatives** (e.g., don't
 
 ### **2. Features**
 
-|Feature|Package|Why this one?|
-|---|---|---|
-|**AI Chatbot**|`google_generative_ai`|The official SDK for Google Gemini. Free tier is generous and easy to implement.|
-|**Maps**|`flutter_map`|Uses **OpenStreetMap** (Free). **IMPORTANT:** We are NOT using Google Maps to avoid credit card billing risks.|
-|**Geolocation**|`geolocator`|Gets the phone's GPS coordinates (Latitude/Longitude) to tag transactions.|
-|**Charts**|`fl_chart`|Creates the Pie Charts and Bar Graphs for the "Analysis" screen.|
-|**Camera**|`image_picker`|Opens the native camera or gallery to pick receipt images.|
+| Feature         | Package                | Why this one?                                                                                                  |
+| --------------- | ---------------------- | -------------------------------------------------------------------------------------------------------------- |
+| **AI Chatbot**  | `google_generative_ai` | The official SDK for Google Gemini. Free tier is generous and easy to implement.                               |
+| **Maps**        | `flutter_map`          | Uses **OpenStreetMap** (Free). **IMPORTANT:** We are NOT using Google Maps to avoid credit card billing risks. |
+| **Geolocation** | `geolocator`           | Gets the phone's GPS coordinates (Latitude/Longitude) to tag transactions.                                     |
+| **Charts**      | `fl_chart`             | Creates the Pie Charts and Bar Graphs for the "Analysis" screen.                                               |
+| **Camera**      | `image_picker`         | Opens the native camera or gallery to pick receipt images.                                                     |
+| Geocoding       | geocoding              | Converts Latitude/Longitude (Numbers) into an Address (Text).                                                  |
 
 ### **3. Utilities**
 
-|Utility|Package|Purpose|
-|---|---|---|
-|**Formatting**|`intl`|Formats currency (`Rp 50.000`) and dates (`12 Oct 2025`) for Indonesian locale.|
-|**Local Storage**|`shared_preferences`|Saves simple settings like "Dark Mode: On" or "Show Balance: Off".|
-|**Icons**|`font_awesome_flutter`|Provides high-quality financial icons better than the default set.|
-|**UUID**|`uuid`|Generates unique IDs for transactions (e.g., `tx-550e8400-e29b`).|
+| Utility           | Package                | Purpose                                                                         |
+| ----------------- | ---------------------- | ------------------------------------------------------------------------------- |
+| **Formatting**    | `intl`                 | Formats currency (`Rp 50.000`) and dates (`12 Oct 2025`) for Indonesian locale. |
+| **Local Storage** | `shared_preferences`   | Saves simple settings like "Dark Mode: On" or "Show Balance: Off".              |
+| **Icons**         | `font_awesome_flutter` | Provides high-quality financial icons better than the default set.              |
+| **UUID**          | `uuid`                 | Generates unique IDs for transactions (e.g., `tx-550e8400-e29b`).               |
 
 ## 📱 Device Permissions & Hardware
 
