@@ -1,5 +1,52 @@
 # FP Pemrograman Mobile Kelompok-1
 
+# 💸 Fundo: Smart Financial Management
+
+**Fundo** is a smart mobile application designed to help students manage their finances. Unlike traditional expense trackers, Fundo uses **AI (Gemini)** to act as a personal financial advisor and **Geolocation** to tag where your money goes.
+
+## 🚀 Getting Started
+
+> **New Team Member?** Start here! 👇
+
+- **💻** [**Setup Guide**](./SETUP_GUIDE.md)**:** How to install Flutter, VS Code, and set up your environment.
+- **🛠️** [**Tech Stack**](./TECH_STACK.md)**:** The libraries and tools we use (Riverpod, Gemini, etc.).
+- **📂** [**Project Structure**](./PROJECT_STRUCTURE.md)**:** Where to find files and where to put your code.
+- **🤝** [**Contribution Guidelines**](./CONTRIBUTING.md)**:** How to make a Pull Request and the "Golden Rule" of Git.
+- 🤖 [System Prompt](AI_PROMPT.md): Context Priming AI Prompts whenever using an AI.
+
+## ✨ Key Features
+
+1. **🤖 AI Financial Advisor:** Chat with Fundo (powered by Google Gemini) to get advice on saving and budgeting based on your real data.
+    
+2. **📍 Geo-Tagging:** Automatically tag transactions with your location. View your spending on an interactive map.
+    
+3. **📸 Receipt Scanning:** Snap a photo of your bill to attach it to a transaction.
+    
+4. **📊 Smart Analysis:** Visualize your spending habits with intuitive pie charts and graphs.
+
+## 👥 The Team (Kelompok 1)
+
+|Role|Member|Responsibilities|
+|---|---|---|
+|**Project Manager / Tech Lead**|**Jonathan Zelig Sutopo**|Architecture, Repo Management, Integrations|
+|**Creative Lead (UI/UX)**|_(Assign Name)_|Design System, Assets, Quality Assurance|
+|**Frontend A (Core)**|_(Assign Name)_|Dashboard, Transaction Flows, Charts|
+|**Frontend B (Features)**|_(Assign Name)_|Maps, Camera, Settings|
+|**Backend Engineer**|_(Assign Name)_|Firebase Auth, Firestore Database, Security|
+|**AI Specialist**|_(Assign Name)_|Gemini API Integration, Prompt Engineering|
+
+## 📱 Screenshots
+
+_(Screenshots will be added here as we develop)_
+
+|Dashboard|Add Transaction|AI Chat|
+|---|---|---|
+||||
+
+## ⚖️ License
+
+This project is for educational purposes at **Institut Teknologi Sepuluh Nopember (ITS)**.
+
 | Nama                        | NRP        |
 | --------------------------- | ---------- |
 | Aras Rizky Ananta           | 5027221053 |

@@ -1,59 +1,61 @@
-# Gradle build system
-.gradle/
-!gradle/wrapper/gradle-wrapper.jar
-
-# Build outputs
-/build/
-app/build/
-**/build/
-
-# Android Studio project files
-.idea/
-*.iml
-*.ipr
-*.iws
-.idea/caches/
-.idea/libraries/
-.idea/modules.xml
-.idea/workspace.xml
-.idea/navEditor.xml
-.idea/assetWizardSettings.xml
-.idea/compiler.xml
-.idea/gradle.xml
-.idea/jarRepositories.xml
-.idea/google-services.xml
-.idea/misc.xml
-.idea/modules/
-.idea/vcs.xml
-.idea/shelf/
-
-# Local configuration
-local.properties
-
-# Kotlin/Java class files
+# Miscellaneous
 *.class
-
-# Logs and reports
 *.log
-
-# Android profiling
-.idea/inspectionProfiles/
-
-# Captures
-captures/
-
-# External native build directories
-.externalNativeBuild/
-.cxx/
-
-# IntelliJ
-out/
-
-# OS-specific files
+*.pyc
+*.swp
 .DS_Store
-Thumbs.db
+.atom/
+.buildlog/
+.history
+.svn/
 
-# Others
-*.apk
-*.ap_
-*.hprof
+# IntelliJ / Android Studio
+*.iml
+.idea/
+.run/
+
+# VS Code
+.vscode/
+
+# Flutter/Dart/Pub
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+
+# Android
+android//*.gradle
+android//gradle-wrapper.jar
+android/.gradle
+android/captures/
+android/gradlew
+android/gradlew.bat
+android/local.properties
+android/generated/
+android/app/google-services.json
+
+# iOS
+ios//*.mode1v3
+ios//.mode2v3
+ios/**/.moved-aside
+ios//*.pbxuser
+ios//.perspectivev3
+ios//default.mode1v3
+ios//default.mode2v3
+ios/**/default.perspectivev3
+ios/Flutter/App.framework
+ios/Flutter/Flutter.framework
+ios/Flutter/Generated.xcconfig
+ios/Flutter/app.flx
+ios/Flutter/app.zip
+ios/Flutter/flutter_assets/
+ios/Podfile.lock
+ios/Pods/
+ios/Runner/GeneratedPluginRegistrant.
+ios/Runner/GoogleService-Info.plist
+
+# Local Configs (API Keys)
+lib/core/constants/api_keys.dart

@@ -1,159 +1,138 @@
-# Apps Android Setup Guide
+# 💻 Fundo Developer Setup Guide
 
-## Quick Start
+**Welcome to the Fundo Team!** 👋 Follow this guide step-by-step to set up your laptop. If you skip a step, the app _will_ crash.
 
-### 1. Prerequisites
-- Android Studio Arctic Fox (2020.3.1) or newer
-- Android SDK API Level 24+ (Android 7.0)
-- JDK 8 or newer
-- Git
+## 🛠️ Phase 1: Install the Tools
 
-### 2. Project Setup
-1. **Download/Clone the project**
-   ```bash
-   # If you have the project files, place them in a directory
-   cd financeflow-android
-   ```
+Before you code, you need these installed.
 
-2. **Open in Android Studio**
-   - Launch Android Studio
-   - Select "Open an Existing Project"
-   - Navigate to the `financeflow-android` directory
-   - Click "OK"
-   - Wait for Gradle sync to complete
+### 1. Visual Studio Code (VS Code)
 
-3. **Add Google Maps API Key**
-   - Open `app/src/main/AndroidManifest.xml`
-   - Find the line: `android:value="YOUR_GOOGLE_MAPS_API_KEY_HERE"`
-   - Replace with your actual Google Maps API key
-   - Get your API key from: https://console.cloud.google.com/
+Download and install [VS Code](https://code.visualstudio.com/ "null").
 
-4. **Build and Run**
-   - Connect an Android device or start an emulator
-   - Click the green "Run" button (▶️) or press `Shift+F10`
-   - Select your target device
+- **Why?** It's fast and has the extensions we need.
+- **Extensions to Install:** Open VS Code, click the "Blocks" icon on the left (Extensions), and install these:
+    - `Flutter` (by Dart Code)
+    - `Dart` (by Dart Code)
+    - `Flutter Riverpod Snippets` (by Robert Brunhage)
+    - `Error Lens` (by Alexander) - _Makes errors show up in red text automatically._
 
-## Project Structure
+### 2. The Flutter SDK
 
-```
-financeflow-android/
-├── app/
-│   ├── src/main/java/com/financeflow/app/
-│   │   ├── MainActivity.kt              # Entry point
-│   │   ├── presentation/
-│   │   │   ├── screens/                 # All UI screens
-│   │   │   │   ├── HomeScreen.kt        # Dashboard
-│   │   │   │   ├── ActivityScreen.kt    # Transaction history
-│   │   │   │   ├── AddFinanceScreen.kt  # Add transactions
-│   │   │   │   ├── SummaryScreen.kt     # Analytics & currency converter
-│   │   │   │   └── MapsScreen.kt        # Financial services locator
-│   │   │   ├── components/              # Reusable UI components
-││   │   │   │   └── BottomNavigation.kt  # Navigation bar
-│   │   │   ├── navigation/              # Navigation setup
-│   │   │   └── viewmodel/               # ViewModels
-│   │   ├── data/                        # Data layer
-│   │   │   ├── model/                   # Data models
-│   │   │   ├── local/                   # Database (Room)
-│   │   │   └── repository/              # Repository pattern
-│   │   ├── di/                          # Dependency injection
-│   │   ├── ui/                          # Theme and design
-│   │   └── utils/                       # Utility functions
-│   │   └── FinanceFlowApplication.kt    # Application class
-│   ├── src/main/res/                    # Android resources
-│   └── build.gradle.kts                 # Module build config
-├── build.gradle.kts                     # Project build config
-├── settings.gradle.kts                  # Project settings
-└── README.md                            # Documentation
-```
+**Windows Users:**
 
-## Key Features
+1. Download the stable zip from [flutter.dev](https://docs.flutter.dev/get-started/install/windows "null").
+2. Extract it to `C:\src\flutter` (Do **NOT** put it in `Program Files`).
+3. Search for "Edit environment variables for your account" in Windows Search.
+4. Edit the `Path` variable and add `C:\src\flutter\bin`.
+5. Open a new Terminal and type `flutter doctor`.
 
-### ✅ Modern UI
-- Built with Jetpack Compose
-- Material Design 3
-- Glass morphism effects
-- Smooth animations
+> [!NOTE]
+> You can see [this](https://youtu.be/1KidD72q87s) for a tutorial on downloading the Flutter SDK
 
-### ✅ Core Functionality
-- Transaction management (CRUD)
-- Financial analytics
-- Maps integration
-- Local database storage
+**Mac Users:**
 
-### ✅ Technical Excellence
-- Clean Architecture
-- Dependency Injection (Hilt)
-- Coroutines for async operations
-- Room database
-- Navigation Component
+1. Download the zip from [flutter.dev](https://docs.flutter.dev/get-started/install/macos "null").
+2. Extract it to your home folder (`~/development/flutter`).
+3. Add it to your path (follow the instructions on the website).
+4. Run `flutter doctor`.
 
-## Development Tips
+### 3. Git
 
-### Adding New Features
-1. Create ViewModel in `presentation/viewmodel/`
-2. Create Screen in `presentation/screens/`
-3. Add navigation in `presentation/navigation/`
-4. Update UI components if needed
+Download [Git](https://www.google.com/search?q=https://git-scm.com/downloads "null") if you don't have it. You need this to download our code.
 
-### Database Schema Changes
-1. Modify entity in `data/model/`
-2. Update DAO in `data/local/`
-3. Increment database version
-4. Add migration if needed
+## 🏗️ Phase 2: Install Android Tools (One-Time Setup)
 
-### UI Customization
-- Colors: `ui/theme/Color.kt`
-- Typography: `ui/theme/Type.kt`
-- Theme: `ui/theme/Theme.kt`
-- Components: `presentation/components/`
+> **Read Carefully:** You need to install the "Android SDK" so your computer knows how to speak "Android". The easiest way to get these files is to install Android Studio.
 
-## Common Issues
+1. Download & Install [Android Studio](https://developer.android.com/studio "null").
+2. Open it **once** to let it download the SDK components.
+3. **Create your Virtual Phone (AVD):**
+    - **Method A (Easy):** On the Android Studio Welcome Screen, click **More Actions** -> **Virtual Device Manager**.
+        - Click **Create Device** -> Choose **Pixel 7** (This is our standard test phone) -> Next.
+        - **System Image:** Click the "Download" arrow next to **API 34** (Android 14). This is a large download (~1.5GB).
+        - Click **Finish**.
+    - **Method B (VS Code - Try this first!):**
+        - Open VS Code -> Press `Ctrl+Shift+P` -> Type `Flutter: Create Android Emulator`.
+        - If it lets you choose "Pixel 7" and "API 34" and works, great!
+        - If it gives an error, use Method A.
+4. **CLOSE ANDROID STUDIO.** You don't need it anymore. 👋
 
-### Gradle Sync Issues
-- Check internet connection
-- Try "Invalidate Caches / Restart"
-- Update Android Studio
-- Check Gradle version compatibility
+## ⚙️ Phase 3: Install Flutter SDK
 
-### Build Errors
-- Clean and rebuild project
-- Check for missing dependencies
-- Verify API keys are added
-- Check for syntax errors
+1. **Windows:** Download the [ZIP File](https://docs.flutter.dev/install/manual). Extract it to `C:\src\flutter`.
+2. **Mac:** Download the [ZIP File](https://docs.flutter.dev/install/manual). Unzip it to your home folder.
+3. **Add to Path**
+4. Open a terminal and run `flutter doctor`. Fix any red checkboxes it shows.
 
-### Runtime Issues
-- Check logcat for error messages
-- Verify permissions in AndroidManifest.xml
-- Check for null pointer exceptions
-- Ensure proper error handling
+> [!NOTE]
+> Check [this](https://youtu.be/1KidD72q87s?si=Fr17K_mJ7gpI3aj2) video out for the detailed installation guide 
 
-## Next Steps
+## 🚀 Phase 4: Get the Project
 
-1. **Customize the app**
-   - Add your branding
-   - Modify colors and themes
-   - Add new features
+1. **Clone the Repository:**
 
-2. **Add real data**
-   - Connect to real APIs
-   - Add authentication
-   - Implement cloud sync
+    ```
+    git clone [https://github.com/AtokTajuddin/projek-mobile-programming.git](https://github.com/AtokTajuddin/projek-mobile-programming.git)
+    cd projek-mobile-programming
+    
+    ```
 
-3. **Test thoroughly**
-   - Unit tests
-   - Integration tests
-   - UI tests
+2. **Install Dependencies:** Download all the libraries (Riverpod, Firebase, etc.) we use:
 
-4. **Prepare for release**
-   - Add signing configuration
-   - Optimize for performance
-   - Test on multiple devices
+    ```
+    flutter pub get
+    
+    ```
 
-## Need Help?
+## 🔑 Phase 5: Add Secret Keys (CRITICAL)
 
-- Check the README.md for detailed documentation
-- Review the code comments and documentation
-- Test each screen individually
-- Use Android Studio's debugging tools
+The app will **crash** if you skip this. We do not upload passwords to GitHub.
 
----
+1. **API Keys File:**
+    - Go to `lib/core/constants/`.
+    - Create a new file named **`api_keys.dart`**.
+    - Paste the code below (Ask **Jonathan** for the real keys in WhatsApp)
+
+        ```
+        class ApiKeys {
+          static const String geminiApiKey = "AIzaSy..."; 
+        }
+        
+        ```
+
+2. **Firebase Config:**
+    - **Android:** Ask Jonathan for `google-services.json` and put it in `android/app/`.
+    - **iOS:** Ask Jonathan for `GoogleService-Info.plist` and put it in `ios/Runner/`.
+
+## 🎮 Phase 6: Daily Workflow (VS Code Only)
+
+**This is how you will work every day.** No Android Studio required!
+
+1. **Open VS Code.**
+2. **Open `lib/main.dart`** (This wakes up the Flutter tools).
+3. **Launch the Emulator:**
+    - Look at the **Bottom Right Corner** of the VS Code window (The Status Bar).
+    - You should see `{ } Dart` and maybe `No Device` or `Windows`.
+    - **Click on that device name.**
+    - A menu will pop up at the top. Select **Start Pixel 7 API 34** (or whatever you named your phone in Phase 2).
+    - _Magic!_ The emulator window will launch automatically. 📱
+4. **Run the App:**
+    - Press **F5** (or Run -> Start Debugging).
+    - The app will compile and open inside that emulator window.
+
+## 🆘 Troubleshooting: "I don't see the Device Button!"
+
+If the bottom-right corner is empty:
+
+1. **Use the Command Palette:**
+    - Press `Ctrl + Shift + P` (Windows) or `Cmd + Shift + P` (Mac).
+    - Type **`Flutter: Select Device`** and press Enter.
+    - If it works, select your emulator.
+2. **Check your Folder:**
+    - Did you open the _Main Folder_?
+    - Go to **File -> Open Folder...** and make sure you select the folder that contains `pubspec.yaml` (the `projek-mobile-programming` folder).
+3. **Check Flutter Doctor:**
+    - Open the Terminal in VS Code (`Ctrl + ~`).
+    - Type `flutter doctor`.
+    - If it says "Flutter not found", your Path Setup (Phase 3) is wrong. Ask Jonathan for help!

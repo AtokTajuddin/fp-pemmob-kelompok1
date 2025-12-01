@@ -1,0 +1,59 @@
+# Gradle build system
+.gradle/
+!gradle/wrapper/gradle-wrapper.jar
+
+# Build outputs
+/build/
+app/build/
+**/build/
+
+# Android Studio project files
+.idea/
+*.iml
+*.ipr
+*.iws
+.idea/caches/
+.idea/libraries/
+.idea/modules.xml
+.idea/workspace.xml
+.idea/navEditor.xml
+.idea/assetWizardSettings.xml
+.idea/compiler.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/google-services.xml
+.idea/misc.xml
+.idea/modules/
+.idea/vcs.xml
+.idea/shelf/
+
+# Local configuration
+local.properties
+
+# Kotlin/Java class files
+*.class
+
+# Logs and reports
+*.log
+
+# Android profiling
+.idea/inspectionProfiles/
+
+# Captures
+captures/
+
+# External native build directories
+.externalNativeBuild/
+.cxx/
+
+# IntelliJ
+out/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Others
+*.apk
+*.ap_
+*.hprof
