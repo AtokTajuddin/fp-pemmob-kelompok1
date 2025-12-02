@@ -17,23 +17,20 @@
 ## ✨ Key Features
 
 1. **🤖 AI Financial Advisor:** Chat with Fundo (powered by Google Gemini) to get advice on saving and budgeting based on your real data.
-    
 2. **📍 Geo-Tagging:** Automatically tag transactions with your location. View your spending on an interactive map.
-    
 3. **📸 Receipt Scanning:** Snap a photo of your bill to attach it to a transaction.
-    
 4. **📊 Smart Analysis:** Visualize your spending habits with intuitive pie charts and graphs.
 
 ## 👥 The Team (Kelompok 1)
 
-| Role                      | Member            | NRP                                         | Responsibilities                                        |
-| ------------------------- | ----------------- | ------------------------------------------- | ------------------------------------------------------- |
-| **Project Manager**       | Jonathan Zelig S. | 5027241047                                  | Architecture, Repo Management, Integrations, Desigining |
-| **Creative Lead (UI/UX)** | _(Assign Name)_   | Design System, Assets, Quality Assurance    | Design System, Assets, Quality Assurance                |
-| **Frontend A (Core)**     | _(Assign Name)_   | Dashboard, Transaction Flows, Charts        | Dashboard, Transaction Flows, Charts                    |
-| **Frontend B (Features)** | _(Assign Name)_   | Maps, Camera, Settings                      | Maps, Camera, Settings                                  |
-| **Backend Engineer**      | _(Assign Name)_   | Firebase Auth, Firestore Database, Security | Firebase Auth, Firestore Database, Security             |
-| **AI Specialist**         | _(Assign Name)_   | Gemini API Integration, Prompt Engineering  | Gemini API Integration, Prompt Engineering              |
+| Role                      | Member             | NRP                                         | Responsibilities                                        |
+| ------------------------- | ------------------ | ------------------------------------------- | ------------------------------------------------------- |
+| **Project Manager**       | Jonathan Zelig S.  | 5027241047                                  | Architecture, Repo Management, Integrations, Desigining |
+| **Creative Lead (UI/UX)** | _(Assign Name)_    | Design System, Assets, Quality Assurance    | Design System, Assets, Quality Assurance                |
+| **Frontend A (Core)**     | _(Assign Name)_    | Dashboard, Transaction Flows, Charts        | Dashboard, Transaction Flows, Charts                    |
+| **Frontend B (Features)** | _(Assign Name)_    | Maps, Camera, Settings                      | Maps, Camera, Settings                                  |
+| **Backend Engineer**      | _(Assign Name)_    | Firebase Auth, Firestore Database, Security | Firebase Auth, Firestore Database, Security             |
+| **AI Specialist**         | Theodorus Aaron U. | Gemini API Integration, Prompt Engineering  | Gemini API Integration, Prompt Engineering              |
 
 ## 📱 Screenshots
 

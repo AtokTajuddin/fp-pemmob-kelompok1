@@ -98,6 +98,7 @@ These are the specific packages we use. **Do not use alternatives** (e.g., don't
 | **Local Storage** | `shared_preferences`   | Saves simple settings like "Dark Mode: On" or "Show Balance: Off".              |
 | **Icons**         | `font_awesome_flutter` | Provides high-quality financial icons better than the default set.              |
 | **UUID**          | `uuid`                 | Generates unique IDs for transactions (e.g., `tx-550e8400-e29b`).               |
+| **Typogrraphy**   | `google_fonts`         | **Text Style**. Makes our text look like "Poppins" (Modern).                    |
 
 ## 📱 Device Permissions & Hardware
 
