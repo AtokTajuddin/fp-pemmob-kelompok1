@@ -117,7 +117,7 @@ Use the same `--dart-define-from-file` flag for `flutter test`, `flutter build`,
 ## 🔑 OAuth Client ID
 
 ```
-415208406640-iqdsluhi1rq8ghu5ed85f4uehori5nej.apps.googleusercontent.com
+41520840-auth.apps.googleusercontent.com
 ```
 
 ✅ Already configured
