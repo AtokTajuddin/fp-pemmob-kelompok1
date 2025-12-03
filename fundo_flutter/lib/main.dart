@@ -1,65 +1,29 @@
 import 'package:flutter/material.dart';
-import 'screens/login_page.dart'; 
-import 'screens/signup_page.dart';
-import 'screens/dashboard_page.dart';
-import 'screens/activity_page.dart';
 import 'screens/onboarding_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const FundoApp());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class FundoApp extends StatelessWidget {
+  const FundoApp({super.key});
 
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Fundo App',
+      title: 'Fundo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
-        useMaterial3: true,
-      ),
-      home: const OnboardingPage(), 
-    );
-  }
-}
-
-
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
-  final String title;
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: Text(widget.title)),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            const Text('You have pushed the button this many times:'),
-            Text('$_counter', style: Theme.of(context).textTheme.headlineMedium),
-          ],
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: const Color(0xFF10B981), // Fundo Green
+          primary: const Color(0xFF10B981),
         ),
+        useMaterial3: true,
+        scaffoldBackgroundColor: const Color(0xFFF8F9FA),
+        fontFamily: 'Poppins', // If you added the font, otherwise default
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      // Start flow: Onboarding -> Login -> Dashboard
+      home: const OnboardingPage(),
     );
   }
 }
