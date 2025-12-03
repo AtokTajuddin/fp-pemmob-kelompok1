@@ -26,14 +26,14 @@
 
 ## 👥 The Team (Kelompok 1)
 
-|Role|Member|Responsibilities|
-|---|---|---|
-|**Project Manager / Tech Lead**|**Jonathan Zelig Sutopo**|Architecture, Repo Management, Integrations|
-|**Creative Lead (UI/UX)**|_(Assign Name)_|Design System, Assets, Quality Assurance|
-|**Frontend A (Core)**|_(Assign Name)_|Dashboard, Transaction Flows, Charts|
-|**Frontend B (Features)**|_(Assign Name)_|Maps, Camera, Settings|
-|**Backend Engineer**|_(Assign Name)_|Firebase Auth, Firestore Database, Security|
-|**AI Specialist**|_(Assign Name)_|Gemini API Integration, Prompt Engineering|
+| Role                      | Member            | NRP                                         | Responsibilities                                        |
+| ------------------------- | ----------------- | ------------------------------------------- | ------------------------------------------------------- |
+| **Project Manager**       | Jonathan Zelig S. | 5027241047                                  | Architecture, Repo Management, Integrations, Desigining |
+| **Creative Lead (UI/UX)** | _(Assign Name)_   | Design System, Assets, Quality Assurance    | Design System, Assets, Quality Assurance                |
+| **Frontend A (Core)**     | _(Assign Name)_   | Dashboard, Transaction Flows, Charts        | Dashboard, Transaction Flows, Charts                    |
+| **Frontend B (Features)** | _(Assign Name)_   | Maps, Camera, Settings                      | Maps, Camera, Settings                                  |
+| **Backend Engineer**      | _(Assign Name)_   | Firebase Auth, Firestore Database, Security | Firebase Auth, Firestore Database, Security             |
+| **AI Specialist**         | _(Assign Name)_   | Gemini API Integration, Prompt Engineering  | Gemini API Integration, Prompt Engineering              |
 
 ## 📱 Screenshots
 
@@ -47,6 +47,10 @@ _(Screenshots will be added here as we develop)_
 
 This project is for educational purposes at **Institut Teknologi Sepuluh Nopember (ITS)**.
 
+---
+
+## Team Member
+
 | Nama                        | NRP        |
 | --------------------------- | ---------- |
 | Aras Rizky Ananta           | 5027221053 |
@@ -58,7 +62,7 @@ This project is for educational purposes at **Institut Teknologi Sepuluh Nopembe
 
 ---
 
-# Project Structure
+##  Project Structure
 
 ```text
 Project Structure
