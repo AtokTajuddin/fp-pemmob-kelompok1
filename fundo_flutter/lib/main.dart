@@ -3,6 +3,7 @@ import 'screens/login_page.dart';
 import 'screens/signup_page.dart';
 import 'screens/dashboard_page.dart';
 import 'screens/activity_page.dart';
+import 'screens/onboarding_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -20,7 +21,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.teal),
         useMaterial3: true,
       ),
-      home: const DashboardPage(), 
+      home: const OnboardingPage(), 
     );
   }
 }
