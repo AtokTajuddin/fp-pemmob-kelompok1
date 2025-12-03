@@ -1,28 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:hive_flutter/hive_flutter.dart';
-
-import 'features/auth/data/local_auth_store.dart';
-import 'firebase_options.dart';
 import 'features/auth/presentation/widgets/auth_wrapper.dart';
 import 'features/auth/presentation/screens/register_screen.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
-  await Hive.initFlutter();
-  await LocalAuthStore.ensureInitialized();
-
   // Initialize Firebase
-  try {
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
-    debugPrint('✅ Firebase initialized successfully');
-  } catch (e) {
-    debugPrint('❌ Firebase initialization error: $e');
-  }
+  // Note: You need to add google-services.json before this will work
+  await Firebase.initializeApp();
 
   runApp(const ProviderScope(child: MyApp()));
 }
@@ -47,7 +34,6 @@ class MyApp extends StatelessWidget {
         ),
       ),
       // AuthWrapper automatically handles routing based on auth state
-      // Shows LoginScreen if not authenticated, HomeScreen if authenticated
       home: const AuthWrapper(),
       routes: {'/register': (context) => const RegisterScreen()},
     );
