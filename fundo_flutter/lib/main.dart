@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:firebase_core/firebase_core.dart'; // Make sure this is in pubspec.yaml
 import 'app.dart';
+import 'design_test.dart';
+import 'prototype_app.dart';
 
 void main() async {
   // 1. Ensure Flutter bindings are ready before doing anything else
@@ -18,5 +20,5 @@ void main() async {
   }
 
   // 3. Run the App
-  runApp(const ProviderScope(child: FundoApp()));
+  runApp(const ProviderScope(child: PrototypeApp()));
 }

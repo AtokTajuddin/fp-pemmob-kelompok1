@@ -2,6 +2,21 @@ import 'package:flutter/material.dart';
 
 class AppColors {
   // ===========================================================================
+  // 🟣 SIGNATURE BRAND (Electric Indigo) - The "Soul" of Fundo
+  // ===========================================================================
+  // Use this for: Primary Buttons (FAB), Active Tab Icons, Links, AI Chatbot
+  static const Color brand = Color(0xFF6366F1); // Indigo 500
+  static const Color brandDark = Color(0xFF4338CA); // Indigo 700
+  static const Color brandLight = Color(0xFFE0E7FF); // Indigo 100 (Backgrounds)
+
+  // A gradient to "mix" the brand with your money green (Good for Cards/Headers)
+  static const LinearGradient brandGradient = LinearGradient(
+    colors: [Color(0xFF6366F1), Color(0xFF10B981)], // Indigo -> Emerald
+    begin: Alignment.topLeft,
+    end: Alignment.bottomRight,
+  );
+  
+  // ===========================================================================
   // 🟢 PRIMARY BRAND (Emerald)
   // ===========================================================================
   static const Color primary = Color(0xFF10B981); // Emerald 500
