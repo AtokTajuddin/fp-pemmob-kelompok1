@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fundo Flutter</string>
+    <!-- Google OAuth Client ID -->
+    <string name="default_web_client_id">415208406640-iqdsluhi1rq8ghu5ed85f4uehori5nej.apps.googleusercontent.com</string>
+</resources>
